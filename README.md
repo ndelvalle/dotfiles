@@ -1,23 +1,15 @@
 # dotfiles
-My dotfiles
 
-# Setup new machine
+### Setup new machine
 
 ```bash
-# Setup with a single command:
-$ chezmoi init --apply https://github.com/ndelvalle/dotfiles.git
+# Install xcode, homebrew, git and setup chezmoi
+$ curl -sS https://raw.githubusercontent.com/ndelvalle/dotfiles/master/setup.sh | sh
+```
 
-# Setup step by step
-# Initialize chezmoi with the dotfiles repo:
-$ chezmoi init git@github.com:ndelvalle/dotfiles.git
+### Update configuration
 
-# Check what changes chezmoi will make to the home directory:
-$ chezmoi diff
-
-# Apply chezmoi changes:
-$ chezmoi apply -v
-
-# On any machine, you can pull and apply the latest changes from this repo with:
+```bash
+# On any machine, pull and apply the latest changes from this repo with:
 $ chezmoi update -v
-
 ```
