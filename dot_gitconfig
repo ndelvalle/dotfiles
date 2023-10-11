@@ -1,0 +1,23 @@
+[user]
+  name = Nicolas del Valle
+  email = nicolas.delvalle@gmail.com
+[fetch]
+  prune = true
+[pull]
+  rebase = true
+[core]
+  excludesfile = ~/.gitignore
+[push]
+  default = current
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+  rebase = true
+[branch]
+  autosetuprebase = always
+[rerere]
+  enabled = 1
+[credential]
+  helper = osxkeychain
+[url "git@github.com:"]
+  insteadOf = https://github.com/
