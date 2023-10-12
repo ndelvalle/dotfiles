@@ -19,4 +19,4 @@ brew install git
 brew install chezmoi
 
 # Setup dotfiles and install remaining dependencies
-chezmoi init --apply https://github.com/ndelvalle/dotfiles.git
+chezmoi init --apply --force https://github.com/ndelvalle/dotfiles.git
