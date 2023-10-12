@@ -1,0 +1,9 @@
+[tools]
+node = '18.18'
+python = '3.12'
+
+[settings]
+# plugins can read the versions files used by other version managers (if
+# enabled by the plugin) for example, .nvmrc in the case of node's nvm
+legacy_version_file = true
+

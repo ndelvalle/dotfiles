@@ -2,7 +2,7 @@
 
 brew install neovim
 brew install wifi-password
-brew install node@18
+brew install rtx
 
 brew install --cask iterm2
 brew install --cask 1password
