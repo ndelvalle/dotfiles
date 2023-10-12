@@ -10,6 +10,6 @@ $ curl -sS https://raw.githubusercontent.com/ndelvalle/dotfiles/master/setup.sh 
 ### Update configuration
 
 ```bash
-# On any machine, pull and apply the latest changes from this repo with:
+# On any machine, pull and apply the latest changes from this repo with
 $ chezmoi update -v
 ```
