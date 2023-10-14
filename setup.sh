@@ -16,6 +16,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Settings: System Preferences » Keyboard » Key Repeat/Delay Until Repeat
 defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 3
+
 killall Finder
 
 # Install Homebrew
