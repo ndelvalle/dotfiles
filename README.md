@@ -1,5 +1,9 @@
 # dotfiles
 
+### Requirements
+
+* [Homebrew](https://brew.sh/)
+
 ### Setup new machine
 
 ```bash
