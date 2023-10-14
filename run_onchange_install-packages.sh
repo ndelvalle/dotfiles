@@ -10,4 +10,4 @@ brew install --cask slack
 brew install --cask vlc
 
 brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install font-hack-nerd-font
