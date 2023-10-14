@@ -17,6 +17,12 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 3
 
+# Turn on mouse Touch-To-Click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+# Apply touch to click changes without restart
+/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+
 killall Finder
 
 # Install Homebrew
