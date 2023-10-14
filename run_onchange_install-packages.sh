@@ -14,3 +14,6 @@ brew install --cask spotify
 brew install --cask telegram
 brew install --cask raycast
 brew install --cask the-unarchiver
+
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
