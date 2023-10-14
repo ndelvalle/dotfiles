@@ -15,6 +15,9 @@ killall Finder
 # https://github.com/orgs/Homebrew/discussions/4311#discussioncomment-5240151
 sudo echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# Add Homebrew to PATH
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/ndelvalle/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install Homebrew base packages
 brew install git
