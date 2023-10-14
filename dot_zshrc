@@ -1,0 +1,31 @@
+# PATH updates
+export PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:/Users/ndelvalle/.local/bin
+export PATH=$PATH:/Users/ndelvalle/.cargo/bin
+
+# Aliases
+alias vim=nvim
+alias ll="eza --long --git"
+# Git
+alias gst="git status"
+alias gco="git checkout"
+
+# Zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+# Plugins
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "marlonrichert/zsh-autocomplete"
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+# Source plugins and add commands to $PATH
+zplug load
+
+# Starship
+eval "$(starship init zsh)"
+
