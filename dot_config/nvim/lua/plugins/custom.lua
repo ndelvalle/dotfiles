@@ -38,7 +38,7 @@ return {
       servers = { eslint = {} },
       setup = {
         eslint = function()
-          require("lazyvim.util").on_attach(function(client)
+          require("lazyvim.util").lsp.on_attach(function(client)
             if client.name == "eslint" then
               client.server_capabilities.documentFormattingProvider = true
             elseif client.name == "tsserver" then
@@ -75,6 +75,15 @@ return {
         filtered_items = {
           visible = true,
         },
+      },
+    },
+  },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = {
+      scope = {
+        enabled = true,
       },
     },
   },
