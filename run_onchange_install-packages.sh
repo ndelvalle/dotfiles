@@ -8,6 +8,7 @@ brew install rust
 brew install ripgrep
 brew install postgresql@16
 brew install redis
+brew install poetry
 
 brew install --cask arc
 brew install --cask iterm2

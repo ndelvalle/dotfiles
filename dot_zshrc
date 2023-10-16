@@ -1,7 +1,7 @@
 # PATH updates
 export PATH=$PATH:./node_modules/.bin
-export PATH=$PATH:/Users/ndelvalle/.local/bin
-export PATH=$PATH:/Users/ndelvalle/.cargo/bin
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.cargo/bin
 
 # Aliases
 alias vim=nvim
