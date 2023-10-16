@@ -22,6 +22,7 @@ brew install --cask raycast
 brew install --cask the-unarchiver
 brew install --cask eul
 brew install --cask readdle-spark
+brew install --cask cron
 
 brew tap homebrew/cask-fonts && brew install --cask font-hack-nerd-font
 brew tap mongodb/brew && brew install mongodb-community@7.0
