@@ -33,3 +33,7 @@ eval "$(rtx activate zsh)"
 
 # starship
 eval "$(starship init zsh)"
+
+
+# Source files
+if [ -f "$HOME/.zsh/.private" ]; then source ~/.zsh/.private; fi
