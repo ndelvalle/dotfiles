@@ -9,6 +9,7 @@ brew install ripgrep
 brew install postgresql@16
 brew install redis
 brew install poetry
+brew install diff-so-fancy
 
 brew install --cask arc
 brew install --cask iterm2
