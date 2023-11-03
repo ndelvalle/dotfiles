@@ -10,7 +10,9 @@ brew install postgresql@16
 brew install redis
 brew install poetry
 brew install diff-so-fancy
+brew install lazygit
 
+brew install --cask hyperkey
 brew install --cask arc
 brew install --cask iterm2
 brew install --cask 1password
