@@ -4,7 +4,6 @@ brew install neovim
 brew install wifi-password
 brew install rtx
 brew install starship
-brew install rust
 brew install ripgrep
 brew install postgresql@16
 brew install redis
