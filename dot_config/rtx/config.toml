@@ -1,6 +1,7 @@
 [tools]
 node = { version = '18.18' }
-python = { version = '3.12' }
+python = { version = '3.11' }
+ruby = { version = '3.1' }
 
 # We can have rtx automatically setup a virtualenv using the following .rtx.toml:
 # [tools]
@@ -10,4 +11,3 @@ python = { version = '3.12' }
 # plugins can read the versions files used by other version managers (if
 # enabled by the plugin) for example, .nvmrc in the case of node's nvm
 legacy_version_file = true
-
