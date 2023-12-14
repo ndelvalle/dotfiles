@@ -11,6 +11,7 @@ brew install poetry
 brew install diff-so-fancy
 brew install lazygit
 brew install jq
+brew install MonitorControl
 
 brew install --cask hyperkey
 brew install --cask arc
