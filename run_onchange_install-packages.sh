@@ -2,7 +2,7 @@
 
 brew install neovim
 brew install wifi-password
-brew install rtx
+brew install mise
 brew install starship
 brew install ripgrep
 brew install postgresql@16
