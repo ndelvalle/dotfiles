@@ -1,39 +1,41 @@
-# PATH updates
+# PATH updates.
 export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.cargo/bin
 
-# Aliases
+# Aliases.
 alias vim=nvim
 alias ll="eza --long --git"
 alias inittimes="repeat 10 {time zsh -i -c exit}"
 alias config="nvim ~/.zshrc"
-# Git
+alias configv="nvim ~/.config/nvim"
+# Git.
 alias gst="git status"
 alias gco="git checkout"
 
-# Zplug
+# Zplug.
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
-# Plugins
+# Plugins.
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "marlonrichert/zsh-autocomplete"
-# Install plugins if there are plugins that have not been installed
+# Install plugins if there are plugins that have not been installed.
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
         echo; zplug install
     fi
 fi
-# Source plugins and add commands to $PATH
+# Source plugins and add commands to $PATH.
 zplug load
 
-# rtx
-eval "$(rtx activate zsh)"
+# Mise.
+eval "$(mise activate zsh)"
 
-# starship
+# Starship.
 eval "$(starship init zsh)"
 
-
-# Source files
+# Source files.
 if [ -f "$HOME/.zsh/.private" ]; then source ~/.zsh/.private; fi
+
