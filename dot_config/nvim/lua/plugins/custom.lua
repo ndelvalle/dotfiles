@@ -1,6 +1,29 @@
+-- https://patorjk.com/software/taag/#p=display&h=3&f=Modular&t=neovim
+local logo = [[
+
+███    ██ ███████  ██████  ██    ██ ██ ███    ███ 
+████   ██ ██      ██    ██ ██    ██ ██ ████  ████ 
+██ ██  ██ █████   ██    ██ ██    ██ ██ ██ ████ ██ 
+██  ██ ██ ██      ██    ██  ██  ██  ██ ██  ██  ██ 
+██   ████ ███████  ██████    ████   ██ ██      ██ 
+
+]]
+
+logo = string.rep("\n", 8) .. logo .. "\n\n"
+
 return {
-  -- add colorschemes
-  { "ellisonleao/gruvbox.nvim" },
+
+  {
+    "nvimdev/dashboard-nvim",
+    opts = {
+      config = {
+        header = vim.split(logo, "\n"),
+      },
+    },
+  },
+
+  -- Color schemes.
+  -- { "ellisonleao/gruvbox.nvim" },
   { "navarasu/onedark.nvim" },
   {
     "LazyVim/LazyVim",
@@ -10,15 +33,13 @@ return {
     },
   },
 
-  { "f-person/git-blame.nvim" },
-
-  -- add symbols-outline
-  -- {
-  --   "simrat39/symbols-outline.nvim",
-  --   cmd = "SymbolsOutline",
-  --   keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
-  --   config = true,
-  -- },
+  {
+    "f-person/git-blame.nvim",
+    opts = {
+      -- https://github.com/f-person/git-blame.nvim#visual-delay-for-displaying-the-blame-info
+      delay = 200,
+    },
+  },
 
   -- add telescope-fzf-native
   {
@@ -29,42 +50,6 @@ return {
       config = function()
         require("telescope").load_extension("fzf")
       end,
-    },
-  },
-
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = { eslint = {} },
-      setup = {
-        eslint = function()
-          require("lazyvim.util").lsp.on_attach(function(client)
-            if client.name == "eslint" then
-              client.server_capabilities.documentFormattingProvider = true
-            elseif client.name == "tsserver" then
-              client.server_capabilities.documentFormattingProvider = false
-            end
-          end)
-        end,
-      },
-    },
-  },
-
-  {
-    "rcarriga/nvim-notify",
-    opts = {
-      level = "WARN",
-    },
-  },
-
-  {
-    "echasnovski/mini.indentscope",
-    opts = {
-      draw = {
-        -- Delay (in ms) between event and start of drawing scope indicator
-        delay = 50,
-        animation = require("mini.indentscope").gen_animation.none(),
-      },
     },
   },
 
@@ -88,9 +73,20 @@ return {
     },
   },
 
+  -- Find and replace (<leader>sr).
+  {
+    "nvim-pack/nvim-spectre",
+  },
+
   -- Disable
   {
     "folke/todo-comments.nvim",
+    enabled = false,
+  },
+
+  {
+    -- Disable tabs.
+    "bufferline.nvim",
     enabled = false,
   },
 }
