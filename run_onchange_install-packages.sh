@@ -26,12 +26,10 @@ brew install --cask vlc
 brew install --cask transmission
 brew install --cask spotify
 brew install --cask telegram
-brew install --cask raycast
 brew install --cask the-unarchiver
 brew install --cask eul
 brew install --cask cron
 
 brew tap homebrew/cask-fonts && brew install --cask font-hack-nerd-font
-brew tap mongodb/brew && brew install mongodb-community@7.0
 
 cargo install eza
