@@ -19,7 +19,6 @@ brew install ngrok/ngrok/ngrok
 
 brew install --cask hyperkey
 brew install --cask arc
-brew install --cask iterm2
 brew install --cask 1password
 brew install --cask slack
 brew install --cask vlc
@@ -29,6 +28,7 @@ brew install --cask telegram
 brew install --cask the-unarchiver
 brew install --cask eul
 brew install --cask cron
+brew install --cask ghostty
 
 brew tap homebrew/cask-fonts && brew install --cask font-hack-nerd-font
 

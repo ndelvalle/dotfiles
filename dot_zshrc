@@ -9,7 +9,7 @@ alias vim=nvim
 alias ll="eza --long --git"
 alias inittimes="repeat 10 {time zsh -i -c exit}"
 alias config="nvim ~/.zshrc"
-alias configv="nvim ~/.config/nvim"
+alias nconfig="nvim ~/.config/nvim"
 # Git.
 alias gst="git status"
 alias gco="git checkout"
