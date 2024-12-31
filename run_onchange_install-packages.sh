@@ -16,6 +16,7 @@ brew install bat
 brew install xidel
 brew install libxml2
 brew install ngrok/ngrok/ngrok
+brew install watchexec
 
 brew install --cask hyperkey
 brew install --cask arc
@@ -29,7 +30,5 @@ brew install --cask the-unarchiver
 brew install --cask eul
 brew install --cask cron
 brew install --cask ghostty
-
-brew tap homebrew/cask-fonts && brew install --cask font-hack-nerd-font
 
 cargo install eza
